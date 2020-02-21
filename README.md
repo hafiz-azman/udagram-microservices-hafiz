@@ -4,7 +4,7 @@ Udagram is a simple cloud application developed alongside the Udacity Cloud Engi
 
 The project is split into 2 parts:
 1. [The Simple Frontend](/frontend) A basic **Ionic** client web application which consumes the RestAPI Backend. 
-2. [The RestAPI Backend Microservices](/restapi), **Node-Express** RestAPI microservices (user, feed etc.)
+2. [The RestAPI Backend Microservices](/restapis), **Node-Express** RestAPI microservices (user, feed etc.)
 
 ### Setup and Run Backend
 
