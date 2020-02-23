@@ -1,0 +1,3 @@
+# ignoring node_modules when building docker image
+# due to error 'invalid-elf-header' when running in docker container on mac
+node_modules

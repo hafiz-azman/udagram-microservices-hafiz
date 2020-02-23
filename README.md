@@ -8,6 +8,20 @@ The project is split into 2 parts:
 
 ### Setup and Run Backend
 
+Before you begin, set these environment variables first:
+
+```
+export PORT=<local_port_to_be_used>
+export POSTGRESS_USERNAME=<your_udagram_postgress_username>;
+export POSTGRESS_PASSWORD=<your_udagram_postgress_password>;
+export POSTGRESS_DB=<your_udagram_postgress_db_name>;
+export POSTGRESS_HOST=<your_udagram_postgress_db_host>;
+export AWS_REGION=<your_aws_region>;
+export AWS_PROFILE=<your_aws_profile_name>;
+export AWS_BUCKET=<your_udagram_s3_bucket_name>;
+export JWT_SECRET=<jwt_secret>;
+```
+
 In the microservice folder that you wish to run:
 
 1. `npm i` to install the dependencies

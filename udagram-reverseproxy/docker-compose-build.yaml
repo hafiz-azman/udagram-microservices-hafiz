@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: ./
+    image: hafizazman/udagram-reverseproxy
+  backend_user:
+    build:
+      context: ../restapis/udagram-restapi-user
+    image: hafizazman/udagram-restapi-user
+  backend_feed:
+    build:
+      context: ../restapis/udagram-restapi-feed
+    image: hafizazman/udagram-restapi-feed
+  frontend:
+    build:
+      context: ../udagram-frontend
+    image: hafizazman/udagram-frontend:local
