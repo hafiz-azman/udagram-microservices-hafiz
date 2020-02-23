@@ -2,20 +2,19 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    service: udagram-frontend
-    version: v1
-  name: udagram-frontend
+    service: frontend
+  name: frontend
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        service: udagram-frontend
+        service: frontend
         api: external
     spec:
       containers:
-      - image: hafizazman/udagram-frontend:local
-        name: udagram-frontend
+      - image: hafizazman/udagram-frontend
+        name: frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80

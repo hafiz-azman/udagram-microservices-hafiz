@@ -2,19 +2,18 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    service: udagram-restapi-user
-    version: v1
-  name: udagram-restapi-user
+    service: user
+  name: user
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        service: udagram-restapi-user
+        service: user
     spec:
       containers:
       - image: hafizazman/udagram-restapi-user
-        name: udagram-restapi-user
+        name: user
         imagePullPolicy: Always
         resources:
           requests:
