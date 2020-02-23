@@ -2,19 +2,18 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    service: udagram-restapi-feed
-    version: v1
-  name: udagram-restapi-feed
+    service: feed
+  name: feed
 spec:
   replicas: 3
   template:
     metadata:
       labels:
-        service: udagram-restapi-feed
+        service: feed
     spec:
       containers:
       - image: hafizazman/udagram-restapi-feed
-        name: udagram-restapi-feed
+        name: feed
         imagePullPolicy: Always
         resources:
           requests:
